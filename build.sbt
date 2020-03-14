@@ -1,4 +1,4 @@
-name := "cov-19"
+name := "scala-spark-base"
 
 version := "0.1"
 

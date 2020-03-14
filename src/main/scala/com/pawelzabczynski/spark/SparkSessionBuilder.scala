@@ -13,9 +13,9 @@ object SparkSessionBuilder {
     SparkSession
       .builder()
       .master(config.master)
-//      .config("spark.sql.warehouse.dir", config.warehouseLocation)
+      .config("spark.sql.warehouse.dir", config.warehouseLocation)
       .appName(config.name)
-//      .enableHiveSupport()
+      .enableHiveSupport()
       .getOrCreate()
   }
 }
