@@ -1,5 +1,5 @@
 package com.pawelzabczynski.config
 
-case class Sensitive() {
+case class Sensitive(value: String) extends AnyVal {
   override def toString: String = "***"
 }

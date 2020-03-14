@@ -1,9 +1,8 @@
 package com.pawelzabczynski
 
 import com.pawelzabczynski.config.ConfigModule
-import org.apache.spark.SparkContext
+import com.pawelzabczynski.spark.SparkModule
 
-trait MainModule extends ConfigModule {
-
-//  lazy val sparkContext: SparkContext
-}
+trait MainModule
+  extends ConfigModule
+    with SparkModule

@@ -1,3 +1,3 @@
 package com.pawelzabczynski.spark
 
-case class SparkConfig()
+case class SparkConfig(name: String, master: String, warehouseLocation: String)
