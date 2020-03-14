@@ -1,20 +1,13 @@
 package com.pawelzabczynski
 
-object Main {
+object Main extends MainModule {
 
   def main(args: Array[String]): Unit = {
-
-    val mainModule = new MainModule {}
-
-    mainModule.logConfig()
-
-    import mainModule.sparkSession.implicits._
+    logConfig()
+    import sparkSession.implicits._
 
     val ds = Seq("a", "b", "c").toDS()
 
     ds.show()
-
   }
-
-
 }
